@@ -2,7 +2,7 @@
 
 ![alt text](Keyboard.png)
 
-This project is my attempt at building a fully custom mechanical keyboard experience from the ground up. The hardware side is a keyboard called HeroicKeyboard, and the software side is a configuration tool called HeroicConfigure. I’m building this with the support of Stasis (Hack Club), mostly because I’ve always wanted a keyboard that feels like mine—not just in switches and keycaps, but in firmware, layout, and software too. Since I've only used membrane keyboards, I wanted to make a keyboard that was my product, and not just something I could buy from amazon
+This project is my attempt at building a fully custom mechanical keyboard experience from the ground up. The hardware side is a keyboard called HeroicKeyboard, and the software side is a configuration tool called HeroicConfigure. I’m building this with the support of Stasis (Hack Club), mostly because I’ve always wanted a keyboard that feels like mine, not just in switches and keycaps, but in firmware, layout, and software too. Since I've only used membrane keyboards, I wanted to make a keyboard that was my product, and not just something I could buy from amazon
 
 HeroicConfigure is meant to be the companion app for HeroicKeyboard. It’s a desktop tool that lets you edit keymaps, layers, and RGB settings in a way that’s simple and doesn’t require reflashing firmware every time you want to change something. The goal is to eventually support VIA‑style live configuration, but with a cleaner UI and more control over how the keyboard behaves.
 
@@ -48,23 +48,22 @@ HeroicConfigure/
     via_layout.json
 
 
-models.py — all the data structures (layers, key actions, RGB config, etc.)
+models.py: all the data structures (layers, key actions, RGB config, etc.)
 
-device_backend.py — the abstract interface every backend must follow
+device_backend.py: the abstract interface every backend must follow
 
-mock_backend.py — fake keyboard for development
+mock_backend.py: fake keyboard for development
 
-hid_backend.py — real USB HID backend (not implemented yet)
+hid_backend.py: real USB HID backend (not implemented yet)
 
-profile_io.py — saving and loading profiles
+profile_io.py: saving and loading profiles
 
-via_layout.json — placeholder for the real keyboard layout
+via_layout.json: placeholder for the real keyboard layout
 
 ## How it works (high‑level)
 HeroicConfigure loads a backend (mock for now), pulls the keyboard’s current profile, and displays it in the GUI. When you click a key or change a setting, the app updates the profile and sends it back to the backend. With the mock backend, this just prints to the console. With the real backend, it’ll send HID packets to the keyboard.
 
-The whole system is designed so the hardware and software can evolve independently. I already made most of the tool, without even getting any of the parts yet (fingers crossed, I get the parts!)
-
+The whole system is designed so the hardware and software can evolve independently. I already made most of the tool, without even getting any of the parts yet.
 All wiring is done through the PCB. The HeroicKeyboard can connect to a device using USB-C, a 2.4 GHz Receiver, or via Bluetooth.
 
 Here is the closest picture I could find of the PCB on the web (the PCB is a predesigned board along with the case for the keyboard, so not many details for it are available online)
@@ -110,4 +109,4 @@ Thank you to Stasis & the rest of the Hackclub team for (hopefully) supporting m
 
 I used braga3dprint's (https://www.printables.com/@braga3dprint) 3d printable design for the keycap puller
 
-I used Copilot for suggestions, sanity checking, and the cover image (as I cannot obtain an image of the keyboard without building it, I used an AI generated image), and I used GitHub Copilot autocompletions while coding
+I used Copilot for suggestions, sanity checking, and the cover image (I cannot obtain an image of the keyboard without building it, so I used an AI generated image), and I used GitHub Copilot autocompletions while coding
