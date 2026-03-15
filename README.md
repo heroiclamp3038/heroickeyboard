@@ -1,10 +1,10 @@
-#HeroicKeyboard
+# HeroicKeyboard
 
 This project is my attempt at building a fully custom mechanical keyboard experience from the ground up. The hardware side is a keyboard called HeroicKeyboard, and the software side is a configuration tool called HeroicConfigure. I’m building this with the support of Stasis (Hack Club), mostly because I’ve always wanted a keyboard that feels like mine—not just in switches and keycaps, but in firmware, layout, and software too. Since I've only used membrance keyboards, I wanted to make a keyboard that was my product, and not just something I could buy from amazon
 
 HeroicConfigure is meant to be the companion app for HeroicKeyboard. It’s a desktop tool that lets you edit keymaps, layers, and RGB settings in a way that’s simple and doesn’t require reflashing firmware every time you want to change something. The goal is to eventually support VIA‑style live configuration, but with a cleaner UI and more control over how the keyboard behaves.
 
-##What HeroicConfigure does right now
+## What HeroicConfigure does right now
 
 HeroicConfigure is still early, but the core structure is in place:
 
@@ -22,8 +22,8 @@ A basic GUI (PySide6) that shows a keyboard layout, lets you select keys, change
 
 The idea is that once the real keyboard PCB is ready, I can plug it in and swap the backend from mock → HID without rewriting the whole app.
 
-##Project structure
-###Code
+## Project structure
+### Code
 HeroicConfigure/
     main.py
     models.py
@@ -46,12 +46,12 @@ profile_io.py — saving and loading profiles
 
 via_layout.json — placeholder for the real keyboard layout
 
-##How it works (high‑level)
+## How it works (high‑level)
 HeroicConfigure loads a backend (mock for now), pulls the keyboard’s current profile, and displays it in the GUI. When you click a key or change a setting, the app updates the profile and sends it back to the backend. With the mock backend, this just prints to the console. With the real backend, it’ll send HID packets to the keyboard.
 
 The whole system is designed so the hardware and software can evolve independently. As long as the backend follows the interface, the UI doesn’t care what’s on the other side.
 
-##Why I’m building this
+## Why I’m building this
 I wanted to learn more about:
 
 How keyboards actually work under the hood
@@ -66,7 +66,7 @@ Designing something end‑to‑end instead of just writing isolated scripts
 
 Stasis gave me the perfect excuse to finally start it.
 
-##What’s next
+## What’s next
 Implementing the real HID protocol
 
 Expanding the layout to match the actual HeroicKeyboard PCB
