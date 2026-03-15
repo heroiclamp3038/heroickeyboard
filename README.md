@@ -69,7 +69,7 @@ All wiring is done through the PCB. The HeroicKeyboard can connect to a device u
 
 Here is the closest picture I could find of the PCB on the web (the PCB is a predesigned board along with the case for the keyboard, so not many details for it are available online)
 
-
+![alt text](image-2.png)
 
 ## Why I’m building this
 I wanted to learn more about:
