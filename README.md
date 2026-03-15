@@ -2,8 +2,6 @@
 
 ![alt text](image-1.png)
 
-I did not add all 108 keys to my model as it is very time-consuming & repetitive, 
-
 This project is my attempt at building a fully custom mechanical keyboard experience from the ground up. The hardware side is a keyboard called HeroicKeyboard, and the software side is a configuration tool called HeroicConfigure. I’m building this with the support of Stasis (Hack Club), mostly because I’ve always wanted a keyboard that feels like mine—not just in switches and keycaps, but in firmware, layout, and software too. Since I've only used membrane keyboards, I wanted to make a keyboard that was my product, and not just something I could buy from amazon
 
 HeroicConfigure is meant to be the companion app for HeroicKeyboard. It’s a desktop tool that lets you edit keymaps, layers, and RGB settings in a way that’s simple and doesn’t require reflashing firmware every time you want to change something. The goal is to eventually support VIA‑style live configuration, but with a cleaner UI and more control over how the keyboard behaves.
@@ -29,6 +27,8 @@ The idea is that once the real keyboard PCB is ready, I can plug it in and swap 
 ## 3D Model
 
 ![alt text](image.png)
+
+I did not add all 108 keys to my model as it is very time-consuming & repetitive.
 
 ## Project structure
 ### Code
