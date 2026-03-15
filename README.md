@@ -1,6 +1,6 @@
 # HeroicKeyboard
 
-![alt text](image-1.png)
+![alt text](Keyboard.png)
 
 This project is my attempt at building a fully custom mechanical keyboard experience from the ground up. The hardware side is a keyboard called HeroicKeyboard, and the software side is a configuration tool called HeroicConfigure. I’m building this with the support of Stasis (Hack Club), mostly because I’ve always wanted a keyboard that feels like mine—not just in switches and keycaps, but in firmware, layout, and software too. Since I've only used membrane keyboards, I wanted to make a keyboard that was my product, and not just something I could buy from amazon
 
@@ -26,7 +26,7 @@ The idea is that once the real keyboard PCB is ready, I can plug it in and swap 
 
 ## 3D Model
 
-![alt text](image.png)
+![alt text](3D-Model.png)
 
 I did not add all 108 keys to my model as it is very time-consuming & repetitive.
 
@@ -69,7 +69,7 @@ All wiring is done through the PCB. The HeroicKeyboard can connect to a device u
 
 Here is the closest picture I could find of the PCB on the web (the PCB is a predesigned board along with the case for the keyboard, so not many details for it are available online)
 
-![alt text](image-2.png)
+![alt text](PCB.png)
 
 ## Why I’m building this
 I wanted to learn more about:
