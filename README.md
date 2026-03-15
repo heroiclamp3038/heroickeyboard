@@ -65,6 +65,8 @@ HeroicConfigure loads a backend (mock for now), pulls the keyboard’s current p
 
 The whole system is designed so the hardware and software can evolve independently. I already made most of the tool, without even getting any of the parts yet (fingers crossed, I get the parts!)
 
+All wiring is done through the PCB. The HeroicKeyboard can connect to a device using USB-C, a 2.4 GHz Receiver, or via Bluetooth
+
 ## Why I’m building this
 I wanted to learn more about:
 
