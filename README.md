@@ -1,5 +1,9 @@
 # HeroicKeyboard
 
+![alt text](image-1.png)
+
+I did not add all 108 keys to my model as it is very time-consuming & repetitive, 
+
 This project is my attempt at building a fully custom mechanical keyboard experience from the ground up. The hardware side is a keyboard called HeroicKeyboard, and the software side is a configuration tool called HeroicConfigure. I’m building this with the support of Stasis (Hack Club), mostly because I’ve always wanted a keyboard that feels like mine—not just in switches and keycaps, but in firmware, layout, and software too. Since I've only used membrane keyboards, I wanted to make a keyboard that was my product, and not just something I could buy from amazon
 
 HeroicConfigure is meant to be the companion app for HeroicKeyboard. It’s a desktop tool that lets you edit keymaps, layers, and RGB settings in a way that’s simple and doesn’t require reflashing firmware every time you want to change something. The goal is to eventually support VIA‑style live configuration, but with a cleaner UI and more control over how the keyboard behaves.
@@ -21,6 +25,10 @@ A profile system that can save and load keyboard configurations as JSON
 A basic GUI (PySide6) that shows a keyboard layout, lets you select keys, change keycodes, and adjust RGB
 
 The idea is that once the real keyboard PCB is ready, I can plug it in and swap the backend from mock → HID without rewriting the whole app.
+
+## 3D Model
+
+![alt text](image.png)
 
 ## Project structure
 ### Code
@@ -83,10 +91,17 @@ Making the UI not look like a placeholder
 
 Firmware work once the board arrives
 
-
+## Bill of Materials
 | Product Name                              | Link                                                                 | Cost per Item | Quantity | Total Cost of Item |
 |-------------------------------------------|----------------------------------------------------------------------|---------------|----------|--------------------|
 | GMK108 Barebones Mechanical Keyboard Kit  | https://a.co/d/0i7tCADY                                             | $69.99        | 1        | $69.99             |
 | Keychron K Pro Banana Switches            | https://www.keychron.com/products/keychron-k-pro-switch?variant=40299927240793 | $0.14         | 110      | $15.40             |
 | XVX White Jade Keycaps                    | https://a.co/d/0irLg7PH                                             | $0.09         | 132      | $11.88             |
 | **Total:**                                |                                                                      | **$70.22**    | **243** | **$97.27**         |
+
+## Credits & Acknowledgements:
+Thank you to Stasis & the rest of the Hackclub team for (hopefully) supporting my project
+
+I used braga3dprint's (https://www.printables.com/@braga3dprint) 3d printable design for the keycap puller
+
+I used Copilot for suggestions, sanity checking, and the cover image (as I cannot obtain an image of the keyboard without building it, I used an AI generated image), and I used GitHub Copilot autocompletions while coding
