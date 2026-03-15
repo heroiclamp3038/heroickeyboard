@@ -1,0 +1,8 @@
+To-Do:
+
+Choose Switches - DONE
+Choose Keyboard Size - DONE
+Choose PCB/Handwiring - DONE
+Choose Type of PCB - DONE
+Choose Case - DONE
+Build Firmware
