@@ -8,7 +8,7 @@ HeroicConfigure is meant to be the companion app for HeroicKeyboard. It’s a de
 
 ## What HeroicConfigure does right now
 
-HeroicConfigure is still early, but the core structure is in place:
+HeroicConfigure is still in an early stage, but the core structure is in place:
 
 A full data model for keymaps, layers, and RGB settings
 
